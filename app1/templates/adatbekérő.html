@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adatbekérő felület</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label for="szöveg">a szöveg megadása</label>
+        <input type="text" id = "szöveg" name = "szöveg" required>
+        <br>
+        <label for="szám">a szám megadása</label>
+        <input type="number" id = "szám" name = "szám" required>
+        <br>
+        <label for="boool">a bool megadása(igaz vagy hamis)</label>
+        <input type="checkbox" name="boool" id="boool">
+        <br>
+        <input type="submit" id = "mentés" name = "mentés" value = "mentés">
+    </form>
+</body>
+</html>
